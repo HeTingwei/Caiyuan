@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:layout_marginTop="8dp"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:src="@drawable/avatar"
+            android:background="@color/noColor"
+            android:id="@+id/main_face"
+            android:scaleType="fitCenter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/main_face"
+            android:text="来自话题："
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/new_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/text_id"
+            android:text="蔬菜"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/img_comment"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/comment_count"
+            android:src="@drawable/comment_count"/>
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="235"/>
+
+        <TextView
+            android:id="@+id/look_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/img_comment"
+            android:text="88"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/look_count"
+            android:src="@drawable/main_eye_count"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/new_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/new_topic"
+        android:text="123"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="今天上菜园，发现菜叶上长了几条虫子，有没有认识的说一下是什么虫子？"/>
+<android.support.v7.widget.RecyclerView
+    android:layout_marginLeft="4dp"
+    android:id="@+id/img_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

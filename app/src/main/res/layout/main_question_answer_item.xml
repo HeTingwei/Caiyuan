@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:id="@+id/avatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@color/noColor"
+            android:scaleType="fitCenter"
+            android:src="@drawable/avatar"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/avatar"
+            android:text="username"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/user_name"
+            android:text="2分钟前"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/answer_text"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:ellipsize="end"
+        android:lines="4"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="胡萝卜适宜在土层深厚、肥沃、富含腐殖质且排水良好的砂质壤土上种植，黏重土壤或排水不良，nkjhkhkjhkbkjh容易使胡萝卜发生歧根、裂根，甚至烂根现象，对长根型品种尤为不利。耕作层一般不应浅于20厘米，含水量为60%～80%，土壤过干，则肉质根细小、..."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/up_bt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/up_gray"/>
+
+        <TextView
+            android:id="@+id/up_count"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="8dp"
+            android:text="20"/>
+
+        <Button
+            android:id="@+id/down_bt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/down_gray"/>
+
+        <TextView
+            android:id="@+id/down_count"
+            android:layout_marginLeft="8dp"
+            android:text="23"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/comment_count"/>
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_marginLeft="8dp"
+            android:text="23"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

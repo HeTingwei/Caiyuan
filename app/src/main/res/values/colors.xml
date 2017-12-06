@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue">#0099FF</color>
+    <color name="green">#01D20D</color>
+    <color name="green_deep">#019C0D</color>
+    <color name="green_light">#a001d20d</color>
+    <color name="green_light2">#6101d20d</color>
+
+
+    <color name="deep_blue">#0088FF</color>
+    <color name="noColor">#00000000</color>
+    <color name="gray">#A1A1A1</color>
+    <color name="gray_light">#CACACA</color>
+    <color name="white">#FFFDFD</color>
+    <color name="waite">#FFFDFD</color>
+    <color name="white_light">#F2F2F2</color>
+    <color name="waite_light">#F2F2F2</color>
+    <color name="black">#000000</color>
+    <color name="light_blue">#F902CCFF</color>
+    <color name="light_blue2">#25AFE3</color>
+    <color name="red">#e32532</color>
+
+
+
+
+<!-- viewPager相关-->
+
+    <color name="tab_checked">#019C0D</color>
+    <color name="tab_unchecked">#A1A1A1</color>
+
+
+
+</resources>

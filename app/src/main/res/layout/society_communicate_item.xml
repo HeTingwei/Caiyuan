@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp">
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:gravity="center"
+        android:text="07-17 22:40"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rightTv"
+            android:textSize="15sp"
+            android:layout_marginLeft="65dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="14dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+
+            android:layout_marginTop="4dp"
+            android:text="54654+654+654+654+654+6546+54哈哈哈+654+646+换行"
+            android:layout_toLeftOf="@+id/avatar_img"
+            android:background="@drawable/communicate_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/avatar_img"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/avatar"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/leftTv"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="65dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="14dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="1231321213255555555555555555555132131"
+            android:layout_toRightOf="@+id/avatar_img2"
+            android:background="@drawable/communicate_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/avatar_img2"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/avatar"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+    </RelativeLayout>
+
+</LinearLayout>

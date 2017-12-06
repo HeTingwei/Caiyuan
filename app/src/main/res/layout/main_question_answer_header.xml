@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:id="@+id/concrete_face"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@color/noColor"
+            android:scaleType="fitCenter"
+            android:src="@drawable/avatar"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/concrete_face"
+            android:text="username"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/user_name"
+            android:text="2分钟前"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/new_topic"
+        android:text="123"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="今天上菜园，发现菜叶上长了几条虫子，有没有认识的说一下是什么虫子？"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/img_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/gray_light">
+
+        <TextView
+            android:id="@+id/answer_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="12条评论"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+        <Spinner
+            android:id="@+id/spinner_sort_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/answer_count"/>
+
+        <Button
+            android:id="@+id/bt_write_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bt_selector"
+            android:text="写回答"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

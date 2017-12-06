@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/green"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/title_return"
+        android:layout_gravity="center_vertical"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/title_return"/>
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_marginRight="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/bg_circle">
+        
+        <EditText
+            android:id="@+id/search_edit"
+            android:hint="请输入关键字搜索"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/search_bt"/>
+
+        <ImageButton
+            android:id="@+id/search_bt"
+            android:src="@drawable/magnifier"
+            android:scaleType="centerInside"
+            android:background="@color/noColor"
+            android:layout_alignParentRight="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

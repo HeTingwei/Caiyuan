@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">菜缘</string>
+    <!--以下为ExpandableListView添加时引入的-->
+    <string name="image">image</string>
+    <string name="title">Title</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+
+</resources>

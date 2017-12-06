@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_light">
+
+    <com.xingyi.caiyuan.view.control.LayoutTitleWithButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/list_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout_msg"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:maxLines="8"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+
+        <ImageButton
+            android:src="@drawable/send"
+            android:onClick="sendClick"
+            android:layout_marginBottom="1dp"
+            android:scaleType="fitCenter"
+            android:background="@color/noColor"
+            android:layout_width="40dp"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

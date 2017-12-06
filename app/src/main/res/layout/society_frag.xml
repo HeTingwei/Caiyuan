@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/green" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="8.0dp" >
+
+            <Button
+                android:id="@+id/btn_message"
+                android:layout_width="70dip"
+                android:layout_height="30dip"
+                android:background="@color/green_deep"
+                android:gravity="center"
+                android:text="消息"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_call"
+                android:layout_width="70dip"
+                android:layout_height="30dip"
+                android:background="@color/green_light"
+                android:gravity="center"
+                android:text="联系人"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

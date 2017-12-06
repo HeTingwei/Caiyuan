@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_light">
+
+    <com.xingyi.caiyuan.view.control.LayoutTitleWithButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.xingyi.caiyuan.view.control.LayoutTitleWithButton>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="特别推荐"/>
+
+        <Switch
+            android:id="@+id/especial_switch"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我关注的问题有了新回答"/>
+
+        <Switch
+            android:id="@+id/answer_switch"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="勿打扰模式"/>
+
+        <Switch
+            android:id="@+id/no_disturb_switch"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启后，22:00至10:00间不收到推送消息。"/>
+
+</LinearLayout>

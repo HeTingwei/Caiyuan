@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xingyi.caiyuan.view.control.LayoutTitleWithButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.xingyi.caiyuan.view.control.LayoutTitleWithButton>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="150dp"
+        android:text="拖动下方滑块，调节字体大小"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<!--注意这里SeekBar样式与实际不符，在java代码里修改过-->
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:scrollbarSize="20dp"
+        android:layout_width="300dp"
+        android:thumb="@drawable/seek_bar_thum"
+        android:max="4"
+        android:progress="1"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/test_font"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="这个是演示字体"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:text="这个是原来字体"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

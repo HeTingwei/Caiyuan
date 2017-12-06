@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:id="@+id/concrete_face"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@color/noColor"
+            android:scaleType="fitCenter"
+            android:src="@drawable/avatar"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/concrete_face"
+            android:text="username"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/user_name"
+            android:text="2分钟前"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="当然就是那种虫子呐！"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/gray_light">
+
+        <TextView
+            android:id="@+id/answer_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="12条评论"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+
+        <Button
+            android:id="@+id/bt_write_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bt_selector"
+            android:text="写评论"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/down_bt"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/down_gray"
+            android:layout_toLeftOf="@+id/bt_write_comment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+        <Button
+            android:id="@+id/up_bt"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/up_gray"
+            android:layout_toLeftOf="@+id/down_bt"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

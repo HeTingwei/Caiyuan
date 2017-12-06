@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_light">
+
+    <com.xingyi.caiyuan.view.control.LayoutTitleWithoutButton
+        android:id="@+id/layoutTitle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTitle2">
+
+        <Button
+            android:id="@+id/encyclopedia_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:background="@color/noColor" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/find_encyclopedia" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_width="86dp"
+            android:layout_marginStart="50dp"
+            android:layout_height="match_parent"
+            android:text="百科" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTitle2">
+
+        <Button
+            android:id="@+id/topic_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:background="@color/noColor"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/find_topic" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_width="86dp"
+            android:layout_marginStart="50dp"
+            android:layout_height="match_parent"
+            android:text="话题" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="110dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTitle2"
+        android:id="@+id/frameLayout">
+
+        <Button
+            android:id="@+id/article_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:background="@color/noColor" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/find_special_article" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_width="86dp"
+            android:layout_marginStart="50dp"
+            android:layout_height="match_parent"
+            android:text="专文" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="160dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTitle2"
+        android:id="@+id/frameLayout2">
+
+        <Button
+            android:id="@+id/expert_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:background="@color/noColor"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/find_expert" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_width="86dp"
+            android:layout_marginStart="50dp"
+            android:layout_height="match_parent"
+            android:text="专家" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:visibility="visible"
+        android:layout_height="42dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="210dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTitle2">
+
+        <Button
+            android:id="@+id/store_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:background="@color/noColor" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/find_store" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_width="86dp"
+            android:layout_marginStart="50dp"
+            android:layout_height="match_parent"
+            android:text="店铺" />
+    </FrameLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

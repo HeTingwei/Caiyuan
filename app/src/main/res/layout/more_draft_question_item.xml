@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/question_title_tv"
+            android:paddingTop="4dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingRight="16dp"
+            android:text="问题标题"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <Button
+            android:id="@+id/resend_bt"
+            android:text="重发"
+            android:background="@drawable/bg_edit"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_bias="0.476" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07-05 09:05:36"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="9dp"
+            app:layout_constraintTop_toBottomOf="@+id/question_title_tv" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/question_content_tv"
+        android:layout_marginTop="4dp"
+        android:paddingTop="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="5555555555555555555555555555555555555555555555555555555题"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

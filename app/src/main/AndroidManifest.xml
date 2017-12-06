@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.xingyi.caiyuan.activity_control">
+
+    <!-- 各权限 -->
+
+
+    <!-- 内存卡读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name="com.xingyi.caiyuan.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+
+        <!-- 注册活动 -->
+        <activity
+            android:name="com.xingyi.caiyuan.view.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xingyi.caiyuan.view.login.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.login.FindPasswordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.login.FindPasswordByMainboxActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.login.AddMessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.navigation_bar.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.login.FindPasswordByPhoneLogin"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.login.FindPasswordByPhoneActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.common_activity.WriteAnswerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.common_activity.WriteQuestionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.more.modify.ModifyUserMassageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.more.setting.SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.more.setting.BlacklistActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.more.setting.MessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.more.setting.PushMessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.more.setting.FontSizeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.more.favorite.FavoriteActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.more.draft.DraftActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.more.question.QuestionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.more.follow.FollowActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.more.answer.AnswerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.more.look_user_msg.LookUserMsgActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.society.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.find.encyclopedias.EncyclopediasActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.find.article.ArticleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.common_activity.QuestionAndAnswerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.common_activity.AnswerAndCommentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.common_activity.ImageShowActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.find.topic.TopicActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.find.expert.ExpertActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xingyi.caiyuan.view.society.message.commuunicate.CommunicateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.xingyi.caiyuan.view.more.setting.about.AboutActivity">
+        </activity>
+    </application>
+
+</manifest>

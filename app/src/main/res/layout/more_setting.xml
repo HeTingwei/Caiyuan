@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white_light"
+              android:orientation="vertical">
+
+    <com.xingyi.caiyuan.view.control.LayoutTitleWithButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:text="使用非Wifi网络时不下载图片"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="无图模式"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:switchMinWidth="60dp"
+            android:textColor="@color/black"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:onClick="fontSizeClick"
+        android:paddingLeft="8dp"
+        android:text="字体大小"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:onClick="messageSetClick"
+        android:paddingLeft="8dp"
+        android:text="消息设置"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:onClick="pushSetClick"
+        android:paddingLeft="8dp"
+        android:text="推送消息设置"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="left|center_vertical"
+        android:onClick="blacklistClick"
+        android:paddingLeft="8dp"
+        android:text="黑名单管理"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/text_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="8.56MB"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/noColor"
+            android:gravity="left|center_vertical"
+            android:onClick="cacheClearClick"
+            android:paddingLeft="8dp"
+            android:text="清除缓存"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/waite"
+        android:gravity="left|center_vertical"
+        android:onClick="aboutClick"
+        android:paddingLeft="8dp"
+        android:text="关于"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:onClick="logOffClick"
+        android:text="退出登录"
+        android:textColor="@color/red"/>
+
+
+</LinearLayout>
